@@ -9,34 +9,37 @@
 </head>
 
 <body>
-  <h1>Curriculum Vitae</h1>
-  <div class="col-md-12">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="./src/home/home.html">Présentation</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./src/skills/skills.html">Compétences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./src/experiences/experience.html">Expériences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./src/trainings/trainings.html">Formations</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  
+  <header>
+      <h1>Curriculun Vitae</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./src/home/index.html">Présentation</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/skills/skills.html">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/experiences/experience.html">Expériences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/trainings/trainings.html">Formations</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
 
+<script>
+  fetch("./src/header.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("header-container").innerHTML = data;
+      });
+</script>
 
-
-
-
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
