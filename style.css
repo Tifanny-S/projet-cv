@@ -1,0 +1,29 @@
+.container {
+    max-width: 1200px; /* Définit une largeur maximale */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    padding: 0 20px; /* Ajoute un petit espace sur les côtés */
+  }
+
+h1, p {
+    color: #306B67;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    color: #A4E6E2;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    background-color: #F2FBFB;
+}
+
+
+.navbar, .navbar a {
+    background-color: #306B67;
+    color: #F2FBFB;
+}
