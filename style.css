@@ -1,29 +1,42 @@
+
 .container {
-    max-width: 1200px; /* Définit une largeur maximale */
-    margin: 0 auto; /* Centre le contenu horizontalement */
-    padding: 0 20px; /* Ajoute un petit espace sur les côtés */
+    max-width: 70%;  
   }
 
 h1, p {
     color: #306B67;
     margin-top: 2%;
     margin-bottom: 2%;
+    text-align: justify;
 }
 
 h2 {
     color: #A4E6E2;
 }
 
-p {
-    text-align: justify;
-}
-
 header {
     background-color: #F2FBFB;
 }
 
+footer {
+    background-color: #306B67;
+    height: 20%;  
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+footer a.btn.btn-primary, a.btn:first-child:active {
+    background-color: #306B67;
+    border-color: #306B67;
+}
 
 .navbar, .navbar a {
     background-color: #306B67;
-    color: #F2FBFB;
+    color: #F2FBFB; 
 }
+
